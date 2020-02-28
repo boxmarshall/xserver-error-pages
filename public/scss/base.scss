@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', ;
+    background-color: #212121;
+    color: #ffffff;
+    font-size: .95rem;
+
+
+    a{
+        color: #eeeeee;
+        text-decoration-style: dotted;
+    }
+
+    div.wrapper {
+        height: 100vh;
+
+        display: grid;
+        grid-template-areas: "nav" "main" "footer";
+        row-gap: 50px;
+        grid-template-rows: max-content auto max-content;
+        grid-template-columns: auto;
+
+        nav {
+            grid-area: "nav";
+            padding: 30px 10px;
+        }
+
+        main {
+            grid-area: "main";
+            padding: 0 10px;
+
+        }
+
+        footer {
+            grid-area: "footer";
+            padding: 30px 10px;
+
+            p.copyright{
+                color: #ffffff;
+                text-align: center;
+            }
+        }
+    }
+
+
+}
